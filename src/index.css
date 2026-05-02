@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-brand-primary: #0F172A;
+  --color-brand-accent: #3B82F6;
+  --color-brand-success: #22C55E;
+}
+
+:root {
+  background-color: #ffffff;
+  color: #0F172A;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-slate-200;
+}
+
+.section-padding {
+  @apply py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto;
+}
